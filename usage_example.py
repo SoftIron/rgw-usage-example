@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #
-# Copyright 2020 SoftIron
+# Copyright 2021 SoftIron Ltd.
 # Example script to extract per-user usage statistics from RGW
 
 import json
