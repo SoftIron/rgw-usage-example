@@ -1,0 +1,154 @@
+# Example returned json from usage show request:
+
+# root@danny-mgr:~# radosgw-admin usage show --uid=alice
+# {
+#     "entries": [
+#         {
+#             "user": "alice",
+#             "buckets": [
+#                 {
+#                     "bucket": "-",
+#                     "time": "2021-02-01 06:00:00.000000Z",
+#                     "epoch": 1612159200,
+#                     "owner": "alice",
+#                     "categories": [
+#                         {
+#                             "category": "get_obj",
+#                             "bytes_sent": 488,
+#                             "bytes_received": 0,
+#                             "ops": 2,
+#                             "successful_ops": 0
+#                         }
+#                     ]
+#                 },
+#                 {
+#                     "bucket": "foo",
+#                     "time": "2021-02-01 02:00:00.000000Z",
+#                     "epoch": 1612144800,
+#                     "owner": "alice",
+#                     "categories": [
+#                         {
+#                             "category": "create_bucket",
+#                             "bytes_sent": 220,
+#                             "bytes_received": 0,
+#                             "ops": 1,
+#                             "successful_ops": 0
+#                         }
+#                     ]
+#                 },
+#                 {
+#                     "bucket": "foobar",
+#                     "time": "2021-02-01 02:00:00.000000Z",
+#                     "epoch": 1612144800,
+#                     "owner": "alice",
+#                     "categories": [
+#                         {
+#                             "category": "complete_multipart",
+#                             "bytes_sent": 308,
+#                             "bytes_received": 0,
+#                             "ops": 1,
+#                             "successful_ops": 1
+#                         },
+#                         {
+#                             "category": "create_bucket",
+#                             "bytes_sent": 0,
+#                             "bytes_received": 0,
+#                             "ops": 1,
+#                             "successful_ops": 1
+#                         },
+#                         {
+#                             "category": "get_bucket_location",
+#                             "bytes_sent": 797,
+#                             "bytes_received": 0,
+#                             "ops": 6,
+#                             "successful_ops": 6
+#                         },
+#                         {
+#                             "category": "init_multipart",
+#                             "bytes_sent": 498,
+#                             "bytes_received": 0,
+#                             "ops": 2,
+#                             "successful_ops": 2
+#                         },
+#                         {
+#                             "category": "list_bucket",
+#                             "bytes_sent": 216,
+#                             "bytes_received": 0,
+#                             "ops": 1,
+#                             "successful_ops": 0
+#                         },
+#                         {
+#                             "category": "put_obj",
+#                             "bytes_sent": 0,
+#                             "bytes_received": 1221591040,
+#                             "ops": 78,
+#                             "successful_ops": 78
+#                         }
+#                     ]
+#                 }
+#             ]
+#         }
+#     ],
+#     "summary": [
+#         {
+#             "user": "alice",
+#             "categories": [
+#                 {
+#                     "category": "complete_multipart",
+#                     "bytes_sent": 308,
+#                     "bytes_received": 0,
+#                     "ops": 1,
+#                     "successful_ops": 1
+#                 },
+#                 {
+#                     "category": "create_bucket",
+#                     "bytes_sent": 220,
+#                     "bytes_received": 0,
+#                     "ops": 2,
+#                     "successful_ops": 1
+#                 },
+#                 {
+#                     "category": "get_bucket_location",
+#                     "bytes_sent": 797,
+#                     "bytes_received": 0,
+#                     "ops": 6,
+#                     "successful_ops": 6
+#                 },
+#                 {
+#                     "category": "get_obj",
+#                     "bytes_sent": 488,
+#                     "bytes_received": 0,
+#                     "ops": 2,
+#                     "successful_ops": 0
+#                 },
+#                 {
+#                     "category": "init_multipart",
+#                     "bytes_sent": 498,
+#                     "bytes_received": 0,
+#                     "ops": 2,
+#                     "successful_ops": 2
+#                 },
+#                 {
+#                     "category": "list_bucket",
+#                     "bytes_sent": 216,
+#                     "bytes_received": 0,
+#                     "ops": 1,
+#                     "successful_ops": 0
+#                 },
+#                 {
+#                     "category": "put_obj",
+#                     "bytes_sent": 0,
+#                     "bytes_received": 1221591040,
+#                     "ops": 78,
+#                     "successful_ops": 78
+#                 }
+#             ],
+#             "total": {
+#                 "bytes_sent": 2527,
+#                 "bytes_received": 1221591040,
+#                 "ops": 92,
+#                 "successful_ops": 88
+#             }
+#         }
+#     ]
+# }
