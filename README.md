@@ -1,5 +1,7 @@
 # Examples for using the RGW Admin API
 
+This script is an example to illustrate how you can extract per-user usage statistics from Ceph's Rados Gateway, which can be useful for management, user monitoring, and billing.
+
 ## Installation
 
     pip install rgw-usage-example/
