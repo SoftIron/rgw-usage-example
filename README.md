@@ -4,7 +4,7 @@ This script is an example to illustrate how you can extract per-user usage stati
 
 ## Installation
 
-    pip install rgw-usage-example/
+    pip install -r requirements.txt
 
 ## Usage
 
